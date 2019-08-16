@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Posts</h2>
+        <ul class="list-group">
+            <app-post-list-item-component 
+            *ngFor = "let post of posts"
+            [title] = "post.title"
+            [loveIts] = "post.loveIts"
+            [content] = "post.content"> 
+        </app-post-list-item-component>
+        </ul>
+      </div>
+    </div>
+  </div>
