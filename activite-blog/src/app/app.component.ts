@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PostsService } from './services/posts.service';
 
 @Component({
   selector: 'app-root',
@@ -7,22 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  constructor(private postsService : PostsService){}
 
-
-  posts = [{
-    title: "Mon premier post",
-    content: "description de mon premier post",
-    loveIts: 0,
-    created_at: new Date()
-  }, {
-    title: "Mon dexieme post",
-    content: "description de mon dexieme post",
-    loveIts: 0,
-    created_at: new Date()
-  },{
-    title: "Mon troisieme post",
-    content: "description de mon troisieme post",
-    loveIts: 0,
-    created_at: new Date()
-  }];
+  onInit(){
+    
+  }
+  
 }

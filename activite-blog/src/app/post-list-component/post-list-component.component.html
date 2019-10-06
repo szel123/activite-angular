@@ -7,9 +7,11 @@
             *ngFor = "let post of posts"
             [title] = "post.title"
             [loveIts] = "post.loveIts"
-            [content] = "post.content"> 
+            [content] = "post.content"
+            [post] = "post">
         </app-post-list-item-component>
         </ul>
+        <button class="btn btn-primary" (click)="onNewPost()">Nouveau post</button>
       </div>
     </div>
   </div>

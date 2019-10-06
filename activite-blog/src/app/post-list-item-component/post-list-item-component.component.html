@@ -6,6 +6,12 @@
         <h4> {{ title }} </h4>
         <p> {{ content }} </p>
 
+        <button class="btn btn-default pull-right" (click)="onDeletePost()">
+            <span class="glyphicon glyphicon-minus"></span>
+        </button>
+        <button class="btn btn-primary pull-right" style="margin-right: 10px"
+         (click)="onViewPost()">Voir</button>
+
         <button class="btn btn-success" style="margin-right: 10px" (click) = "ajouter()">Love it!</button>
         <button class="btn btn-danger" (click) = "soustraire()">Don't love it!</button>
     </li>
